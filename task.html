@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/modules/appBar.css">
+    <link rel="stylesheet" href="/style/styles.css">
+    <script src="app.js" defer></script>
+
+    <title>Gestion des Tâches</title>
+</head>
+<body>
+   
+    <nav class="navbar">
+        <img class="logo" src="assets/images/logo-simplon.png" alt="logo-simlpon">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Fabrique</a></li>
+            <li><a href="#">Formation</a></li>
+            <li><a href="#">Partenaires</a></li>
+            <li><a href="#">Espaces</a></li>
+            <li><a href="#">Entités</a></li>
+            <li><a href="task.html">Tâches</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Gestion des Tâches</h1>
+    </header>
+
+    <section id="task-list">
+        <!-- La liste des tâches  affiche ici -->
+    </section>
+
+    <section id="add-task">
+        <h2>Ajouter une nouvelle tâche</h2>
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Titre" required>
+            <textarea id="task-description" placeholder="Description"></textarea>
+            <input type="date" id="task-deadline" required>
+            <select id="task-priority">
+                <option value="faible">Faible</option>
+                <option value="moyenne">Moyenne</option>
+                <option value="forte">Forte</option>
+            </select>
+            <button type="submit">Ajouter</button>
+        </form>
+    </section>
+
+    <div id="edit-task-modal" class="modal">
+        <!-- Modal pour la modification de la tâche -->
+    </div>
+
+    <div id="task-details-modal" class="modal">
+        <!-- Modal pour les détails de la tâche -->
+    </div>
+
+    <div id="edit-task-modal" class="modal">
+        <!-- Modal pour la modification de la tâche -->
+    </div>
+
+</body>
+</html>
